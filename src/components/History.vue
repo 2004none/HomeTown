@@ -1,8 +1,6 @@
 <template>
     <div class="history">
-        <div class="history-image">
-            <img src="../assets/pic/info.png">
-        </div>
+        <div class="history-image"> </div>
         <div class="history-text">
             <h2>历史文化</h2>
             <p>东安历史悠久，人杰地灵，山水秀美，物华天宝，是楚文化的重要发祥地之一，素有“舜风楚韵”之美誉，既是首批“全国武术之乡”，又是“中国德文化之乡”。</p>
@@ -34,17 +32,23 @@ function closePopup(){
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
-    flex-wrap:nowrap;
+    height: 700px;
 }
 .history-image{
     flex: 1;
-    transform: scale(0.45);
-    transform-origin: left top;
-    width: 70%;
+    min-width: 50%;
+    max-width: 80%;
+    background-image: url("../assets/pic/info.png");
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-size: 100%;
 }
+
 .history-text{
+    margin-top: 8%;
+    margin-left: 5%;
     flex:2;
-    width:30%;
+    max-width:40%;
 }
 
 .Button{
@@ -59,5 +63,7 @@ function closePopup(){
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+
 }
+
 </style>

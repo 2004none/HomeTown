@@ -4,21 +4,26 @@ import HomeBar from "./components/Bar.vue";
 import PictureDisplay from "./components/PictureDisplay.vue";
 import Map from "./components/Map.vue";
 import History from './components/History.vue';
-
+import Sense from './components/Sense.vue';
+import Food from './components/Foods.vue';
+import Festival from './components/Festival.vue';
 
 </script>
 
 <template>
-  <div class="background">
+  <div id="Home" class="background">
     <HomeBar/>
     <div class="textContainer">
         行至东安，定有梦与美景<br>徜徉东安，便是诗和远方
     </div>
     <PictureDisplay />
-    <Map/>
-    <History/>
+    
   </div>
-
+  <Map id="Map"/>
+  <History id="Histroy"/>
+  <Sense id="Sense"/>
+  <Food id="Food"/>
+  <Festival id="Festival"/>
 </template>
 
 <style scoped>
@@ -36,7 +41,6 @@ import History from './components/History.vue';
     background-size: auto;
     background-origin: padding-box;
     background-clip: border-box;
-
     z-index: -999;
 }
 .textContainer{

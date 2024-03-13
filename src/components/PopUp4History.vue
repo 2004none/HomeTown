@@ -143,6 +143,8 @@ function clicked(num:number){
     border-radius: 8px;
     display: inline-block;
     background-color: #ffffff00;
+    margin-left: 0%;
+    margin-right: 1%;
 }
 
 .text::-webkit-scrollbar{

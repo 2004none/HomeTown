@@ -10,12 +10,13 @@
 <template>
     <div class="scroll">
         <div class="nav" :class="navBarFixed == true ? 'navBarWrap':''">
-            <div class="buttonContainer">
-                <button class="button">衣</button>
-                <button class="button">食</button>
+            <div class="buttonContainer" @click="clicked">
+                <!-- <router-link to="/Home#Home" tag="button">Home</router-link>
+                <router-link to="/Home#Map" tag="button">Map</router-link>
                 <button class="button">住</button>
-                <button class="button">行</button>
-                <button class="button">景</button>
+                <button class="button" onclick="scrollToElement('#Map')">行</button>
+                <button class="button">景</button>  -->
+                东安
             </div>
 
         </div>
@@ -45,7 +46,10 @@
     })
 
     function clicked(){
-
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     }
 
 </script>
@@ -56,6 +60,7 @@
     height: 100px;
 }
 .nav{ 
+    text-align: center;
     margin: auto;
     padding: 10px;
     width:80%;
@@ -76,8 +81,9 @@
 }
 
 .buttonContainer{
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
     align-items: center
 }
 
