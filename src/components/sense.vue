@@ -2,11 +2,11 @@
 import Card from './Card4Sense.vue';
 import { ref } from 'vue'
 const content = ref([
-    ["舜皇山国家森林公园", "./assets/pic/sense/1.jpg","http://www.da.gov.cn/da/msgj/201605/f44df09cc8634ee5966d948ebbba1289.shtml"],
-    ["舜皇岩","./assets/pic/sense/2.jpg","http://www.da.gov.cn/da/msgj/201605/2747f60bbdae4cb69fab4cbc5118f03c.shtml"],
-    ["沉香寺","./assets/pic/sense/3.png","https://baike.baidu.com/item/%E6%B2%89%E9%A6%99%E5%AF%BA/55956760"],
-    ["九龙岩","./assets/pic/sense/1.jfif","https://baike.baidu.com/item/%E4%B9%9D%E9%BE%99%E5%B2%A9%E7%9F%B3%E5%88%BB/2405542"],
-    ["广利桥","./assets/pic/sense/2.jfif","http://www.da.gov.cn/da/msgj/201605/0da36ecd1f35450e879a2fde856021da.shtml"]
+    ["舜皇山国家森林公园", "src/assets/pic/sense/1.jpg","http://www.da.gov.cn/da/msgj/201605/f44df09cc8634ee5966d948ebbba1289.shtml"],
+    ["舜皇岩","src/assets/pic/sense/2.jpg","http://www.da.gov.cn/da/msgj/201605/2747f60bbdae4cb69fab4cbc5118f03c.shtml"],
+    ["沉香寺","src/assets/pic/sense/3.png","https://baike.baidu.com/item/%E6%B2%89%E9%A6%99%E5%AF%BA/55956760"],
+    ["九龙岩","src/assets/pic/sense/1.jfif","https://baike.baidu.com/item/%E4%B9%9D%E9%BE%99%E5%B2%A9%E7%9F%B3%E5%88%BB/2405542"],
+    ["广利桥","src/assets/pic/sense/2.jfif","http://www.da.gov.cn/da/msgj/201605/0da36ecd1f35450e879a2fde856021da.shtml"]
 ])
 
 function getInfo(index:number,num:number){
